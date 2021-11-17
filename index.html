@@ -12,23 +12,67 @@
     </nav>
     <main>
         <h2>Vacation Contest Sign-Up Form</h2>
-        <form> <!-- TODO: Set Action and Method Properties -->
+        <form action="results.html" method="GET"> <!-- TODO: Set Action and Method Properties -->
             <div>
-                <label for="firstname">Your First Name</label>
-                <input type="text" id="firstname" name="firstname">
+                <label for="firstname">First Name</label>
+                <span class="required-field">*</span>
+                <input type="text" id="firstname" name="firstname" minlength="2" maxlength="35">
                 <!-- TODO: Create a "lastname" input with type "text" -->
+                <label for="lastname">Last Name</label>
+                <span class="required-field">*</span>
+                <input type="text" id="lastname" name="lastname" minlength="2" maxlength="35">
+                <label for="Age">Age</label>
+                <span class="required-field">*</span>
+                <input type="number" id="age" name="age" min="21" max="120"> 
+                <h5>Must Be 21 Or Older To Participate</h5>
             </div>
             <!-- TODO: Make fieldset and legend -->
-            <!-- Todo: Email Input -->
-            <!-- Todo: Street Address Input -->
-            <!-- Todo: City, State, and Zip Inputs -->
+            <fieldset>
+                <legend>CONTACT INFO</legend>
+                <label for="Email">Email</label>
+                <span class="required-field">*</span>
+                <input type="text" id="Email Address" name="Email Address">
+                <label for="Street Address">Street Address</label>
+                <span class="required-field">*</span>
+                <input type="text" id="Street Address" name="Street Address">
+                <label for="City">City</label>
+                <span class="required-field">*</span>
+                <input type="text" id="City" name="City">
+                <label for="State">State</label>
+                <span class="required-field">*</span>
+                <input type="text" id="State" name="State">
+                <label for="Zip-Code">Zip-Code</label>
+                <span class="required-field">*</span>
+                <input type="number" id="Zip-Code" name="Zipe-Code">
+            </fieldset>
+            <fieldset>
+                <p>Please select your preferred destination.</p>
+                 
+                 <label for="aruba">aruba</label>
+                 <input type="radio" id="aruba" name="aruba" value="aruba">
+                 
+                 <label for="iceland">iceland</label>
+                 <input type="radio" id="iceland" name="iceland" value="iceland">
+                 
+                 <label for="japan">japan</label>
+                 <input type="radio" id="japan" name="japan" value="japan">
 
-            <!-- TODO: Second fieldset -->
-            <!-- TODO: Radio buttons for selecting preferred destination -->
-            <!-- TODO: Color input for selecting favorite color -->
-            <!-- TODO: Checkboxes for selecting extra add-ons -->
+                 <label for="new-zealand">new-zealand</label>
+                 <input type="radio" id="new-zealand" name="new-zealand" value="new-zealand">
+
+                 <label for="tropics">tropics</label>
+                 <input type="radio" id="tropics" name="tropics" value="tropics">
+
+                 <p>Favorite Color</p>
+
+                 <label for="favorite color">Favorite Color</label>
+                 <input type="color" id="favorite color" name="favorite color">
+
+                 <label for="liability">I understand that Vacation Time LLC is not responsible for any injury incurred on any sponsored trip.</label>
+                 <input type="checkbox" id="liability" name="liability">  
+              </fieldset>
             
-            <!-- TODO: Submit Button -->
+            <input type="submit" value="Submit">
         </form>
     </main>
     <footer>
